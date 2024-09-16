@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color for contrast */
+  min-height:40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  margin-bottom: 20px;
+}
+
+.App-textfield {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.App-button {
+  background-color: #009105; /* Dark button background */
+  color: white; /* Button text color */
+  border: none;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Minus {
+  background-color: #ff3f3f; /* Dark button background */
+ 
+}
+
+.App-button:hover {
+  background-color: #777; /* Lighter button background on hover */
+}
