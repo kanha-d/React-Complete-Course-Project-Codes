@@ -1,0 +1,133 @@
+body{
+  padding: 40px;
+}
+.products {
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+}
+
+.products__single {
+  height: 300px;
+  list-style: none;
+  padding: 20px;
+  background-color: #f8f9fa; /* Lighter shade for elegance */
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products__single:hover {
+  transform: translateY(-10px); /* Smooth hover effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.products__single > img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Slightly round image edges */
+}
+
+.pagination {
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between pagination items */
+}
+
+.pagination > span {
+  padding: 12px 18px;
+  border: 1px solid #6c757d; /* Darker border for contrast */
+  cursor: pointer;
+  background-color: white;
+  color: #6c757d;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination > span:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.pagination__disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination__selected {
+  background-color: #6c757d;
+  color: white;
+  border: 1px solid transparent; /* Remove the border on selected */
+}
+
+.product-details {
+  margin-top: 10px;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.product-id {
+  color: #555;
+  font-size: 0.9em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  color: #ff5722;
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+
+/* Style for the entire navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style for the navigation links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+/* Style for each link */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
